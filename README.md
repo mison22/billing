@@ -2,12 +2,13 @@
 
 ## 📚 Overview
 
-This repository contains four comprehensive guides to prepare you for the Omada Health Software Engineer II interview. The interview has two parts:
+This repository contains comprehensive guides to prepare you for the Omada Health Software Engineer II interview. The interview has three parts:
 
 1. **Code Review (5-10 minutes)** - Present your take-home implementation
 2. **Live Coding (30 minutes)** - Extend your code without AI assistance
+3. **System Design (45-60 minutes)** - Design an integration service on a whiteboard
 
-These guides will help you master both parts efficiently.
+These guides will help you master all three parts efficiently.
 
 ---
 
@@ -19,12 +20,58 @@ These guides will help you master both parts efficiently.
 | **[omada_interview_prep.md](omada_interview_prep.md)** (26KB) | Deep analysis of 10 likely coding challenges | Read 3-5 days before for context |
 | **[omada_quick_ref.md](omada_quick_ref.md)** (6.5KB) | Quick reference card with key patterns | Keep open during interview |
 | **[omada_code_templates.md](omada_code_templates.md)** (13KB) | Copy-paste code templates for rapid implementation | Reference during live coding |
+| **[SYSTEM_DESIGN_SCOPE.md](SYSTEM_DESIGN_SCOPE.md)** (15KB) | System design scope analysis and framework | Read 2-3 days before for context and patterns |
+| **[PRACTICE_PROBLEMS.md](PRACTICE_PROBLEMS.md)** (45KB) | 3 detailed system design practice problems with solutions | Practice 1-2 days before, work through problems |
 
-**Total Content:** ~57KB of targeted preparation material
+**Total Content:** ~117KB of targeted preparation material
 
 ---
 
 ## 📖 Recommended Learning Path
+
+### 🎯 Phase 0: System Design Prep (Days -5 to -3)
+
+**Goal:** Understand what to expect and practice integration patterns
+
+#### Step 0: Understand the System Design Exercise
+1. **Read [`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md)** (30-45 minutes)
+   - Understand the scope and focus (integration patterns, not billing domain)
+   - Learn the universal framework (clarify → design → deep dive → trade-offs)
+   - Review integration patterns you'll need (webhooks, polling, queues)
+   - Note reliability patterns (retry, circuit breakers, idempotency)
+
+**What to do:**
+- [ ] Internalize the system design framework
+- [ ] Review integration patterns section
+- [ ] Connect patterns to your take-home code (Sidekiq, async processing)
+
+#### Step 0.5: Practice System Design Problems
+2. **Practice with [`PRACTICE_PROBLEMS.md`](PRACTICE_PROBLEMS.md)** (2-3 hours, optional but recommended)
+   - **Problem 1: Health Data Integration** (40 min practice + review) ⭐ MOST LIKELY
+     - Most relevant to Omada's domain
+     - Practice drawing the architecture
+     - Study the clarifying questions
+     - Review the deep dive answers
+   
+   - **Problem 2: Partner Integration** (30 min practice + review)
+     - Shows batch processing patterns
+     - Good for SFTP/file handling scenarios
+   
+   - **Problem 3: Notification Service** (30 min practice + review)
+     - Multi-channel patterns
+     - Priority queuing concepts
+
+**What to do:**
+- [ ] Pick Problem 1, set timer for 30-40 min
+- [ ] Work through it without looking at solution
+- [ ] Compare your approach with the solution
+- [ ] Practice explaining your design out loud
+
+**Output:** You can confidently work through a system design problem, ask good clarifying questions, and explain integration patterns
+
+---
+
+## 📖 Recommended Learning Path (Code Review + Live Coding)
 
 ### 🎯 Phase 1: Understanding (Days -5 to -3)
 
@@ -184,7 +231,38 @@ This is your cheat sheet. Read it fully, focusing on:
 
 ## 🎓 How to Use During Interview
 
-### Part 1: Code Review (5-10 min)
+### Part 1: System Design (45-60 min)
+
+**Reference:** [`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md) + [`PRACTICE_PROBLEMS.md`](PRACTICE_PROBLEMS.md)
+
+**Framework (follow this):**
+1. **Clarify Requirements (5-7 min)**
+   - Ask about scale (users, requests, data volume)
+   - Ask about external systems (APIs, rate limits, formats)
+   - Ask about SLAs (latency, availability)
+   - Ask "Is this real-time or batch?"
+
+2. **High-Level Design (10-15 min)**
+   - Draw the flow: External Systems → API Gateway → Queue → Workers → Database
+   - Explain each component's purpose
+   - Show data flow with arrows
+
+3. **Deep Dive (20-25 min)**
+   - They'll ask: "How do you handle failures?" "What if API is down?" "How prevent duplicates?"
+   - Be ready for: Error handling, retry logic, idempotency, circuit breakers
+
+4. **Trade-offs (10 min)**
+   - Proactively discuss alternatives
+   - "For v1 I'd do X, at scale we'd need Y"
+
+**Quick mental review right before:**
+- Integration patterns (webhooks, polling, batch)
+- Reliability patterns (retry, circuit breaker, idempotency)
+- Your framework (don't forget to ask questions first!)
+
+---
+
+### Part 2: Code Review (5-10 min)
 
 **Reference:** [`omada_code_review_script.md`](omada_code_review_script.md)
 
@@ -200,7 +278,7 @@ This is your cheat sheet. Read it fully, focusing on:
 
 ---
 
-### Part 2: Live Coding (30 min)
+### Part 3: Live Coding (30 min)
 
 **Reference:** [`omada_quick_ref.md`](omada_quick_ref.md) (visible) + [`omada_code_templates.md`](omada_code_templates.md) (searchable)
 
@@ -272,20 +350,22 @@ Most extensions follow:
 
 ## 📊 Study Time Estimates
 
-**Minimum (4 hours):**
+**Minimum (5-6 hours):**
+- System Design: 2 hours ([`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md) + practice Problem 1)
 - [`omada_interview_prep.md`](omada_interview_prep.md): 60 min (focus on Tier 1)
 - [`omada_code_templates.md`](omada_code_templates.md): 30 min (focus on top 3)
 - [`omada_code_review_script.md`](omada_code_review_script.md): 90 min (practice presentation)
 - [`omada_quick_ref.md`](omada_quick_ref.md): 30 min (day-of review)
 
-**Recommended (6-7 hours):**
-- Day -5 to -3: 2.5 hours (interview_prep + code_templates deep study)
+**Recommended (8-9 hours):**
+- Day -5 to -3: 4.5 hours (system design scope + practice Problem 1: 2.5 hours, interview_prep + code_templates: 2 hours)
 - Day -2 to -1: 2 hours (code review practice, twice through)
-- Day of: 30 min (quick_ref refresh)
-- Live practice: 2 hours (implement top 3 scenarios yourself for real)
+- Day of: 30 min (quick_ref refresh + system design framework reminder)
+- Live practice: 2 hours (implement top 3 coding scenarios yourself for real)
 
-**Thorough (10+ hours):**
+**Thorough (12+ hours):**
 - All of the above
+- Plus: Practice all 3 system design problems in [`PRACTICE_PROBLEMS.md`](PRACTICE_PROBLEMS.md)
 - Plus: Actually implement each Tier 1 feature in your codebase
 - Plus: Record yourself doing code review 5 times
 - Plus: Pair program practice session with someone
@@ -293,6 +373,11 @@ Most extensions follow:
 ---
 
 ## ✅ Pre-Interview Checklist
+
+### 5 Days Before
+- [ ] Read [`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md) fully
+- [ ] Practice Problem 1 from [`PRACTICE_PROBLEMS.md`](PRACTICE_PROBLEMS.md) (Health Data Integration)
+- [ ] Can you explain integration patterns (webhooks, polling, queues)?
 
 ### 3 Days Before
 - [ ] Read [`omada_interview_prep.md`](omada_interview_prep.md) fully
@@ -304,6 +389,7 @@ Most extensions follow:
 - [ ] Watch yourself once (video)
 - [ ] Can you draw your data model from memory?
 - [ ] Review anticipated questions in [`omada_code_review_script.md`](omada_code_review_script.md)
+- [ ] Quick review: System design framework (clarify → design → deep dive → trade-offs)
 
 ### Morning Of
 - [ ] Read [`omada_quick_ref.md`](omada_quick_ref.md) completely
@@ -323,19 +409,26 @@ Most extensions follow:
 
 **You're ready when you can:**
 
-1. **Code Review Part:**
+1. **System Design Part:**
+   - [ ] Can ask 5-7 good clarifying questions
+   - [ ] Can draw a clear architecture diagram in 10 minutes
+   - [ ] Can explain integration patterns (webhooks, polling, queues)
+   - [ ] Can discuss failure handling (retry, circuit breakers)
+   - [ ] Can explain trade-offs clearly
+
+2. **Code Review Part:**
    - [ ] Explain your architecture in 2 minutes without looking
    - [ ] Walk through RecurringBillingService confidently
    - [ ] Answer "why service objects?" without hesitation
    - [ ] Respond to "how would you add overage billing?" immediately
 
-2. **Live Coding Part:**
+3. **Live Coding Part:**
    - [ ] Identify which files need changes in < 1 minute
    - [ ] Know the service object template by heart
    - [ ] Can write a basic test without reference
    - [ ] Recognize the top 3 challenges instantly if asked
 
-3. **General Confidence:**
+4. **General Confidence:**
    - [ ] You can explain any file in your codebase
    - [ ] You know the trade-offs you made
    - [ ] You're comfortable saying "in production I'd also..."
@@ -398,6 +491,17 @@ Most extensions follow:
 - Explain what's missing: "I'd add validation for X"
 - Show you know the pattern even if incomplete
 
+### System Design: Drawing Mistakes
+- It's okay to erase and redraw
+- Start simple, add complexity
+- Label everything clearly
+- Ask "should I add more detail here?" if unsure
+
+### System Design: Don't Know an Answer
+- Say "I'm not familiar with that specific technology, but here's how I'd think about it..."
+- Reference similar patterns from your experience
+- Ask "what would you recommend?" (shows collaboration)
+
 ---
 
 ## 📝 Final Notes
@@ -427,6 +531,8 @@ Most extensions follow:
 ## 🚀 You've Got This!
 
 **Your preparation:**
+- ✅ Understood system design scope and patterns
+- ✅ Practiced integration service designs
 - ✅ Analyzed your implementation deeply
 - ✅ Identified top 10 likely extensions
 - ✅ Practiced your code review presentation
@@ -447,14 +553,23 @@ Now go nail this interview! 💪
 ## 📞 Quick Reference Summary
 
 **Before Interview:**
-1. Study [`omada_interview_prep.md`](omada_interview_prep.md) for context
-2. Master [`omada_code_templates.md`](omada_code_templates.md) top 3
-3. Practice [`omada_code_review_script.md`](omada_code_review_script.md) 2-3 times
+1. Read [`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md) for context
+2. Practice Problem 1 from [`PRACTICE_PROBLEMS.md`](PRACTICE_PROBLEMS.md)
+3. Study [`omada_interview_prep.md`](omada_interview_prep.md) for coding context
+4. Master [`omada_code_templates.md`](omada_code_templates.md) top 3
+5. Practice [`omada_code_review_script.md`](omada_code_review_script.md) 2-3 times
 
 **Day Of:**
 1. Review [`omada_quick_ref.md`](omada_quick_ref.md) only (30 min)
-2. Have code editor open with key files
-3. Keep quick_ref visible during interview
+2. Quick mental review: System design framework
+3. Have code editor open with key files
+4. Keep quick_ref visible during interview
+
+**During System Design:**
+1. Ask clarifying questions first (5-7 min)
+2. Draw high-level architecture (10-15 min)
+3. Deep dive on 2-3 areas (20-25 min)
+4. Discuss trade-offs (10 min)
 
 **During Code Review:**
 1. Architecture → Services → Design decisions
@@ -467,7 +582,8 @@ Now go nail this interview! 💪
 3. Demonstrate (25-30 min)
 
 **If stuck:**
-- Search [`omada_code_templates.md`](omada_code_templates.md)
+- System Design: Review integration patterns from [`SYSTEM_DESIGN_SCOPE.md`](SYSTEM_DESIGN_SCOPE.md)
+- Live Coding: Search [`omada_code_templates.md`](omada_code_templates.md)
 - Follow your service object pattern
 - Narrate your thinking
 
