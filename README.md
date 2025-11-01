@@ -15,10 +15,10 @@ These guides will help you master both parts efficiently.
 
 | File | Purpose | When to Use |
 |------|---------|-------------|
-| **omada_code_review_script.md** (12KB) | Step-by-step presentation script for code review | Study 2-3 days before, review morning of interview |
-| **omada_interview_prep.md** (26KB) | Deep analysis of 10 likely coding challenges | Read 3-5 days before for context |
-| **omada_quick_ref.md** (6.5KB) | Quick reference card with key patterns | Keep open during interview |
-| **omada_code_templates.md** (13KB) | Copy-paste code templates for rapid implementation | Reference during live coding |
+| **[omada_code_review_script.md](omada_code_review_script.md)** (12KB) | Step-by-step presentation script for code review | Study 2-3 days before, review morning of interview |
+| **[omada_interview_prep.md](omada_interview_prep.md)** (26KB) | Deep analysis of 10 likely coding challenges | Read 3-5 days before for context |
+| **[omada_quick_ref.md](omada_quick_ref.md)** (6.5KB) | Quick reference card with key patterns | Keep open during interview |
+| **[omada_code_templates.md](omada_code_templates.md)** (13KB) | Copy-paste code templates for rapid implementation | Reference during live coding |
 
 **Total Content:** ~57KB of targeted preparation material
 
@@ -30,7 +30,7 @@ These guides will help you master both parts efficiently.
 
 **Goal:** Build mental models of likely challenges and your codebase architecture
 
-#### Step 1: Read `omada_interview_prep.md` (60-90 minutes)
+#### Step 1: Read [`omada_interview_prep.md`](omada_interview_prep.md) (60-90 minutes)
 **Focus areas:**
 1. **"Your Implementation Analysis"** section (10 min)
    - Validates your architecture strengths
@@ -54,7 +54,7 @@ These guides will help you master both parts efficiently.
 
 ---
 
-#### Step 2: Study `omada_code_templates.md` (45 minutes)
+#### Step 2: Study [`omada_code_templates.md`](omada_code_templates.md) (45 minutes)
 **Focus areas:**
 1. **Migration Template** (5 min)
    - Memorize the basic structure
@@ -82,7 +82,7 @@ These guides will help you master both parts efficiently.
 
 **Goal:** Nail the 5-10 minute presentation of YOUR code
 
-#### Step 3: Master `omada_code_review_script.md` (2 hours total, spread over 2 days)
+#### Step 3: Master [`omada_code_review_script.md`](omada_code_review_script.md) (2 hours total, spread over 2 days)
 
 **Day -2 (1 hour):**
 1. **Read entire script once** (20 min)
@@ -133,7 +133,7 @@ These guides will help you master both parts efficiently.
 
 #### Step 4: Morning Review (30 minutes before interview)
 
-**15 minutes: `omada_quick_ref.md`**
+**15 minutes: [`omada_quick_ref.md`](omada_quick_ref.md)**
 This is your cheat sheet. Read it fully, focusing on:
 
 1. **"Your Architecture in 60 Seconds"** (5 min)
@@ -173,8 +173,8 @@ This is your cheat sheet. Read it fully, focusing on:
    - `test/services/recurring_billing_service_test.rb`
 
 2. Have ready in browser:
-   - `omada_quick_ref.md` (visible, don't hide it)
-   - `omada_code_templates.md` (easy to search/copy)
+   - [`omada_quick_ref.md`](omada_quick_ref.md) (visible, don't hide it)
+   - [`omada_code_templates.md`](omada_code_templates.md) (easy to search/copy)
 
 3. Terminal ready:
    - `cd` to project directory
@@ -186,7 +186,7 @@ This is your cheat sheet. Read it fully, focusing on:
 
 ### Part 1: Code Review (5-10 min)
 
-**Reference:** `omada_code_review_script.md`
+**Reference:** [`omada_code_review_script.md`](omada_code_review_script.md)
 
 **Quick review right before:**
 - Opening statement (30 sec)
@@ -202,7 +202,7 @@ This is your cheat sheet. Read it fully, focusing on:
 
 ### Part 2: Live Coding (30 min)
 
-**Reference:** `omada_quick_ref.md` (visible) + `omada_code_templates.md` (searchable)
+**Reference:** [`omada_quick_ref.md`](omada_quick_ref.md) (visible) + [`omada_code_templates.md`](omada_code_templates.md) (searchable)
 
 **Minute 0-5: Clarify & Plan**
 1. Listen to the requirement
@@ -212,11 +212,11 @@ This is your cheat sheet. Read it fully, focusing on:
 
 **Minute 5-25: Implementation**
 1. **Migration first** if adding columns
-   - Search "Migration Template" in code_templates.md
+   - Search "Migration Template" in [`omada_code_templates.md`](omada_code_templates.md)
    - Copy structure, adapt
 
 2. **Model/Service next**
-   - Search for relevant feature in code_templates.md
+   - Search for relevant feature in [`omada_code_templates.md`](omada_code_templates.md)
    - Copy relevant portions
    - Adapt to specific requirement
 
@@ -273,10 +273,10 @@ Most extensions follow:
 ## 📊 Study Time Estimates
 
 **Minimum (4 hours):**
-- omada_interview_prep.md: 60 min (focus on Tier 1)
-- omada_code_templates.md: 30 min (focus on top 3)
-- omada_code_review_script.md: 90 min (practice presentation)
-- omada_quick_ref.md: 30 min (day-of review)
+- [`omada_interview_prep.md`](omada_interview_prep.md): 60 min (focus on Tier 1)
+- [`omada_code_templates.md`](omada_code_templates.md): 30 min (focus on top 3)
+- [`omada_code_review_script.md`](omada_code_review_script.md): 90 min (practice presentation)
+- [`omada_quick_ref.md`](omada_quick_ref.md): 30 min (day-of review)
 
 **Recommended (6-7 hours):**
 - Day -5 to -3: 2.5 hours (interview_prep + code_templates deep study)
@@ -295,18 +295,18 @@ Most extensions follow:
 ## ✅ Pre-Interview Checklist
 
 ### 3 Days Before
-- [ ] Read omada_interview_prep.md fully
-- [ ] Study code_templates.md top 3 implementations
+- [ ] Read [`omada_interview_prep.md`](omada_interview_prep.md) fully
+- [ ] Study [`omada_code_templates.md`](omada_code_templates.md) top 3 implementations
 - [ ] Can you explain why overage billing is #1 most likely?
 
 ### 1 Day Before
 - [ ] Practice code review presentation 2-3 times
 - [ ] Watch yourself once (video)
 - [ ] Can you draw your data model from memory?
-- [ ] Review anticipated questions in code_review_script.md
+- [ ] Review anticipated questions in [`omada_code_review_script.md`](omada_code_review_script.md)
 
 ### Morning Of
-- [ ] Read omada_quick_ref.md completely
+- [ ] Read [`omada_quick_ref.md`](omada_quick_ref.md) completely
 - [ ] Have code editor open with key files in tabs
 - [ ] Print or have quick_ref visible during interview
 - [ ] Can run `rails test` in your project
@@ -353,9 +353,9 @@ Most extensions follow:
 
 ### Day Of
 - **Don't** cram new material morning of
-- **Do** refresh with quick_ref.md only
+- **Do** refresh with [`omada_quick_ref.md`](omada_quick_ref.md) only
 - **Don't** hide your reference materials during live coding
-- **Do** search code_templates.md quickly when needed
+- **Do** search [`omada_code_templates.md`](omada_code_templates.md) quickly when needed
 
 ### During Interview
 - **Don't** panic if question isn't in top 10
@@ -386,7 +386,7 @@ Most extensions follow:
 ### Live Coding: Don't Recognize the Challenge
 - Ask clarifying questions to understand requirement
 - Identify which service/model is affected
-- Use the generic service template from code_templates.md
+- Use the generic service template from [`omada_code_templates.md`](omada_code_templates.md)
 
 ### Live Coding: Code Isn't Working
 - Narrate what you're debugging
@@ -447,12 +447,12 @@ Now go nail this interview! 💪
 ## 📞 Quick Reference Summary
 
 **Before Interview:**
-1. Study interview_prep.md for context
-2. Master code_templates.md top 3
-3. Practice code_review_script.md 2-3 times
+1. Study [`omada_interview_prep.md`](omada_interview_prep.md) for context
+2. Master [`omada_code_templates.md`](omada_code_templates.md) top 3
+3. Practice [`omada_code_review_script.md`](omada_code_review_script.md) 2-3 times
 
 **Day Of:**
-1. Review quick_ref.md only (30 min)
+1. Review [`omada_quick_ref.md`](omada_quick_ref.md) only (30 min)
 2. Have code editor open with key files
 3. Keep quick_ref visible during interview
 
@@ -467,7 +467,7 @@ Now go nail this interview! 💪
 3. Demonstrate (25-30 min)
 
 **If stuck:**
-- Search code_templates.md
+- Search [`omada_code_templates.md`](omada_code_templates.md)
 - Follow your service object pattern
 - Narrate your thinking
 
