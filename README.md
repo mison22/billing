@@ -14,15 +14,32 @@ These guides will help you master all three parts efficiently.
 
 ## 🗂️ Files in This Repository
 
+### 🎯 System Design (Part 1 - 45-60 min)
+
+| File | Purpose | When to Use |
+|------|---------|-------------|
+| **[omada_system_design_scope.md](omada_system_design_scope.md)** (15KB) | System design scope analysis and framework | Read 2-3 days before for context and patterns |
+| **[omada_practice_problems.md](omada_practice_problems.md)** (45KB) | 3 detailed system design practice problems with solutions | Practice 1-2 days before, work through problems |
+
+### 📝 Code Review (Part 2 - 5-10 min)
+
 | File | Purpose | When to Use |
 |------|---------|-------------|
 | **[omada_code_review_script.md](omada_code_review_script.md)** (12KB) | Step-by-step presentation script for code review | Study 2-3 days before, review morning of interview |
-| **[omada_interview_prep.md](omada_interview_prep.md)** (26KB) | Deep analysis of 10 likely coding challenges | Read 3-5 days before for context |
-| **[omada_quick_ref.md](omada_quick_ref.md)** (6.5KB) | Quick reference card with key patterns | Keep open during interview |
+
+### 💻 Live Coding (Part 3 - 10-30 min)
+
+| File | Purpose | When to Use |
+|------|---------|-------------|
+| **[omada_live_coding_30min.md](omada_live_coding_30min.md)** (26KB) | Deep analysis of 10 likely 30-minute coding challenges (overage billing, proration, etc.) | Read 3-5 days before for context |
+| **[omada_live_coding_10min.md](omada_live_coding_10min.md)** (33KB) | 10 quick coding challenges for 10-minute sessions (validations, scopes, simple methods) | Review 1-2 days before, practice top 3 patterns |
 | **[omada_code_templates.md](omada_code_templates.md)** (13KB) | Copy-paste code templates for rapid implementation | Reference during live coding |
-| **[omada_system_design_scope.md](omada_system_design_scope.md)** (15KB) | System design scope analysis and framework | Read 2-3 days before for context and patterns |
-| **[omada_practice_problems.md](omada_practice_problems.md)** (45KB) | 3 detailed system design practice problems with solutions | Practice 1-2 days before, work through problems |
-| **[omada_live_coding_10min.md](omada_live_coding_10min.md)** (33KB) | 10 quick coding challenges for short live coding sessions | Review 1-2 days before, practice top 3 patterns |
+
+### ⚡ Quick Reference (Day Of)
+
+| File | Purpose | When to Use |
+|------|---------|-------------|
+| **[omada_quick_ref.md](omada_quick_ref.md)** (6.5KB) | Quick reference card with key patterns | Keep open during interview |
 
 **Total Content:** ~150KB of targeted preparation material
 
@@ -78,19 +95,22 @@ These guides will help you master all three parts efficiently.
 
 **Goal:** Build mental models of likely challenges and your codebase architecture
 
-#### Step 1: Read [`omada_interview_prep.md`](omada_interview_prep.md) (60-90 minutes)
+#### Step 1: Read [`omada_live_coding_30min.md`](omada_live_coding_30min.md) (60-90 minutes)
+**Note:** This file focuses on 30-minute live coding challenges (larger feature extensions). For 10-minute quick additions, see [`omada_live_coding_10min.md`](omada_live_coding_10min.md).
+
 **Focus areas:**
 1. **"Your Implementation Analysis"** section (10 min)
    - Validates your architecture strengths
    - Identifies gaps that might be tested
    
-2. **"Top 10 Live Coding Enhancements"** (45 min)
-   - Read Tier 1 (most likely) thoroughly
+2. **"Top 10 Live Coding Enhancements (30 minutes each)"** (45 min)
+   - Read Tier 1 (most likely) thoroughly - overage billing, proration, grace period
    - Skim Tier 2 and 3
    - Understand WHY each is ranked where it is
+   - These are larger features requiring migrations, services, and tests
 
 3. **"Interview Strategy"** section (10 min)
-   - Internalize the 5-25 minute breakdown
+   - Internalize the 5-25 minute breakdown (for 30-minute sessions)
    - Note the "Key Talking Points" phrases
 
 **What to do:**
@@ -98,7 +118,7 @@ These guides will help you master all three parts efficiently.
 - [ ] Highlight your top 3 predictions: Overage Billing, Proration, Grace Period
 - [ ] Note production considerations you can mention
 
-**Output:** You should be able to answer "What are the 3 most likely extensions?" without looking
+**Output:** You should be able to answer "What are the 3 most likely 30-minute extensions?" without looking (overage billing, proration, grace period)
 
 ---
 
@@ -367,14 +387,14 @@ Most extensions follow:
 
 **Minimum (6-7 hours):**
 - System Design: 2 hours ([`omada_system_design_scope.md`](omada_system_design_scope.md) + practice Problem 1)
-- [`omada_interview_prep.md`](omada_interview_prep.md): 60 min (focus on Tier 1)
+- 30-min Live Coding: [`omada_live_coding_30min.md`](omada_live_coding_30min.md) - 60 min (focus on Tier 1)
+- 10-min Live Coding: [`omada_live_coding_10min.md`](omada_live_coding_10min.md) - 30 min (review top 3 challenges)
 - [`omada_code_templates.md`](omada_code_templates.md): 30 min (focus on top 3)
-- [`omada_live_coding_10min.md`](omada_live_coding_10min.md): 30 min (review top 3 challenges)
 - [`omada_code_review_script.md`](omada_code_review_script.md): 90 min (practice presentation)
 - [`omada_quick_ref.md`](omada_quick_ref.md): 30 min (day-of review)
 
 **Recommended (9-10 hours):**
-- Day -5 to -3: 5 hours (system design scope + practice Problem 1: 2.5 hours, interview_prep + code_templates + 10min challenges: 2.5 hours)
+- Day -5 to -3: 5 hours (system design scope + practice Problem 1: 2.5 hours, live_coding_30min + code_templates + 10min challenges: 2.5 hours)
 - Day -2 to -1: 2 hours (code review practice, twice through)
 - Day of: 30 min (quick_ref refresh + system design framework reminder)
 - Live practice: 2 hours (implement top 3 coding scenarios yourself for real)
@@ -396,10 +416,10 @@ Most extensions follow:
 - [ ] Can you explain integration patterns (webhooks, polling, queues)?
 
 ### 3 Days Before
-- [ ] Read [`omada_interview_prep.md`](omada_interview_prep.md) fully
+- [ ] Read [`omada_live_coding_30min.md`](omada_live_coding_30min.md) fully (30-minute challenges)
 - [ ] Study [`omada_code_templates.md`](omada_code_templates.md) top 3 implementations
-- [ ] Review [`omada_live_coding_10min.md`](omada_live_coding_10min.md) top 3 challenges (validations, scopes, methods)
-- [ ] Can you explain why overage billing is #1 most likely?
+- [ ] Review [`omada_live_coding_10min.md`](omada_live_coding_10min.md) top 3 challenges (10-minute quick additions: validations, scopes, methods)
+- [ ] Can you explain why overage billing is #1 most likely for 30-minute challenges?
 
 ### 1 Day Before
 - [ ] Practice code review presentation 2-3 times
@@ -441,10 +461,11 @@ Most extensions follow:
 
 3. **Live Coding Part:**
    - [ ] Identify which files need changes in < 1 minute
-   - [ ] Can add a validation, scope, or simple method in 5-7 minutes
-   - [ ] Know the service object template by heart (for larger features)
+   - [ ] For 10-min: Can add a validation, scope, or simple method in 5-7 minutes
+   - [ ] For 30-min: Know the service object template by heart (migrations, services, tests)
    - [ ] Can write a basic test without reference
    - [ ] Recognize the top 3 quick challenges (validation, scope, calculation method)
+   - [ ] Recognize the top 3 larger challenges (overage billing, proration, grace period)
 
 4. **General Confidence:**
    - [ ] You can explain any file in your codebase
@@ -581,9 +602,9 @@ Now go nail this interview! 💪
 **Before Interview:**
 1. Read [`omada_system_design_scope.md`](omada_system_design_scope.md) for context
 2. Practice Problem 1 from [`omada_practice_problems.md`](omada_practice_problems.md)
-3. Study [`omada_interview_prep.md`](omada_interview_prep.md) for coding context
-4. Master [`omada_code_templates.md`](omada_code_templates.md) top 3
-5. Review [`omada_live_coding_10min.md`](omada_live_coding_10min.md) top 3 challenges
+3. Study [`omada_live_coding_30min.md`](omada_live_coding_30min.md) for 30-minute coding challenges
+4. Review [`omada_live_coding_10min.md`](omada_live_coding_10min.md) for 10-minute quick additions
+5. Master [`omada_code_templates.md`](omada_code_templates.md) top 3
 6. Practice [`omada_code_review_script.md`](omada_code_review_script.md) 2-3 times
 
 **Day Of:**
