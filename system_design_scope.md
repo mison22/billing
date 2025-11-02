@@ -11,7 +11,7 @@
 - Focused scope, not broad architecture
 
 ### "integrates with various internal and external applications"
-- **Internal:** Other Omada services/systems
+- **Internal:** Other company services/systems
 - **External:** Third-party APIs, webhooks, SaaS tools
 - Focus on **integration patterns**, not the domain itself
 
@@ -28,7 +28,7 @@
 1. They said "design **a service**" (new, not extend yours)
 2. Emphasis on "integrates with various applications" (integration focus)
 3. "Nothing additional to prepare" (not billing-specific prep needed)
-4. Omada is a health tech company - design likely health-tech related
+4. This is a health tech company interview - design likely health-tech related
 
 ### Possible: **Related to Billing Conceptually**
 
@@ -37,9 +37,9 @@
 - "Design a service that syncs subscription data with CRM"
 - Uses similar patterns (webhooks, APIs) but different domain
 
-## 🏥 Likely System Design Topics (Omada Context)
+## 🏥 Likely System Design Topics (Health Tech Context)
 
-Omada Health is a **digital health platform** for chronic disease management. Possible designs:
+For a **digital health platform** for chronic disease management. Possible designs:
 
 ### Option 1: Healthcare Data Integration Service
 "Design a service that pulls patient health data from various EHR systems (Epic, Cerner) and wearable devices (Fitbit, Apple Health)."
@@ -62,7 +62,7 @@ Omada Health is a **digital health platform** for chronic disease management. Po
 - Multi-channel (SMS, email, in-app)
 
 ### Option 3: Partner Integration Platform
-"Design a service that syncs Omada member data with employer HR systems and health plan databases."
+"Design a service that syncs member data with employer HR systems and health plan databases."
 
 **Focus:**
 - Bidirectional sync

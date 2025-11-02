@@ -1,4 +1,4 @@
-# Omada Live Coding - 10 Minute Challenges
+# Live Coding - 10 Minute Challenges
 
 ## ⏱️ Context: Short Live Coding Session
 

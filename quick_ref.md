@@ -1,4 +1,4 @@
-# Omada Interview Quick Reference Card
+# Technical Interview Quick Reference Card
 
 ## Your Architecture in 60 Seconds
 

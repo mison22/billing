@@ -1,4 +1,4 @@
-# Omada System Design - Practice Problems
+# System Design - Practice Problems
 
 ## 🎯 How to Use This Document
 
@@ -17,7 +17,7 @@ For each problem:
 ### 📋 Prompt
 
 **Interviewer says:**
-"Omada needs to integrate with multiple health data sources to track our members' health metrics. Design a service that pulls data from wearable devices like Fitbit, Apple Health, and Garmin. The service should collect step counts, weight, blood glucose, and activity data. We have about 50,000 active members, and we need to keep their data reasonably up-to-date throughout the day."
+"A health tech company needs to integrate with multiple health data sources to track our members' health metrics. Design a service that pulls data from wearable devices like Fitbit, Apple Health, and Garmin. The service should collect step counts, weight, blood glucose, and activity data. We have about 50,000 active members, and we need to keep their data reasonably up-to-date throughout the day."
 
 **Follow-up info they'll give if you ask:**
 - Members can connect multiple devices
@@ -411,7 +411,7 @@ logger.info({
 ### 📋 Prompt
 
 **Interviewer says:**
-"Omada partners with large employers and health plans. We need to sync member enrollment data bidirectionally with their HR systems. Design a service that:
+"A health tech company partners with large employers and health plans. We need to sync member enrollment data bidirectionally with their HR systems. Design a service that:
 - Receives daily SFTP file drops with new enrollments (CSV, 1000-50,000 records)
 - Sends daily reports back to partners (enrollment status, program progress)
 - Handles real-time eligibility checks via REST API
@@ -615,7 +615,7 @@ This allows adding new partners without code changes."
     delivery: {
       method: 'sftp',
       host: 'ftp.acmecorp.com',
-      path: '/inbound/omada/'
+      path: '/inbound/company/'
     }
   }
 }
@@ -947,7 +947,7 @@ end
 ### 📋 Prompt
 
 **Interviewer says:**
-"Design a notification service that sends messages to Omada members via email, SMS, and in-app notifications. The service needs to:
+"Design a notification service that sends messages to members via email, SMS, and in-app notifications. The service needs to:
 - Send appointment reminders, health tips, coach messages
 - Support personalization (member name, coach name, upcoming appointments)
 - Handle delivery failures and retries

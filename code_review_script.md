@@ -1,4 +1,4 @@
-# Omada Code Review Presentation (5-10 Minutes)
+# Code Review Presentation (5-10 Minutes)
 
 ## Opening (30 seconds)
 "I'll walk you through my implementation at three levels: architecture, key design decisions, and how the billing flow works. I built a service-oriented billing system that handles subscription lifecycle, anniversary-based billing, and widget usage tracking."

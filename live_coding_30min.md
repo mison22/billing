@@ -1,4 +1,4 @@
-# Omada Health Interview Prep: Live Coding Enhancements
+# Technical Interview Prep: Live Coding Enhancements
 
 ## Your Implementation Analysis
 
